@@ -1,0 +1,140 @@
+.items{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    flex-grow: 1;
+    overflow: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #ebebeb;
+    border: 1px solid #f1f6f9;
+    margin: 5px;
+    padding: 3px;
+}
+.card li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.card p{
+    padding-top: 0;
+    margin-top: 0;
+    text-align: justify;
+}
+.filter-title{
+    background-color: #ebebeb;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-decoration: solid;
+}
+.filter-lokasi{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #f1f6f9;
+}
+.filter-harga{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #f1f6f9;
+}
+.filter-industri{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border: 1px solid #f1f6f9
+}
+
+@media screen and (min-width: 1025px){
+    .content{
+        float: left;
+        width: 1230px;
+        padding: 0;
+        margin: 0;
+    }
+    .filter-box{
+        float: left;
+        margin-right: 0;
+        padding-right: 0;
+        margin-left:50px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 1px #ebebeb;
+        border: 1px solid #f1f6f9;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+    }
+    .card img{
+        width: 100px;
+        float: left;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width: 1024px) {
+    .content{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .filter-box{
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 1px #ebebeb;
+        border: 1px solid #f1f6f9;
+        width: 100%;
+    }
+    .filter-title{
+        width: 100%;
+    }
+    .filter-lokasi{
+        float: left;
+    }
+    .filter-harga{
+        float:left;
+    }
+    .filter-industri{
+        float:left;
+    }
+    .card img{
+        width: 100px;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .content{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .filter-box{
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 1px #ebebeb;
+        border: 1px solid #f1f6f9;
+        width: 100%;
+    }
+    .filter-title{
+        width: 100%;
+    }
+    .filter-lokasi{
+        float: left;
+    }
+    .filter-harga{
+        float:left;
+    }
+    .filter-industri{
+        float:left;
+    }
+    .card img{
+        width: 85px;
+        float: left;
+    }
+}

@@ -1,0 +1,36 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'home/css/shop.css' %}">
+    <title>Upload Shop</title>
+{% endblock %}
+
+{% block content %}
+    <aside id='filter'>
+
+    </aside>
+    <div id='content'>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="fieldWrapper">
+                    {{ field.errors }}
+                    <table>
+                        <tr>
+                            <th>{{ field.label_tag }}</th>
+                            <td>{{ field }}</td>
+                        </tr>
+                    </table>
+                    {% if field.help_text %}
+                    <p class="help">{{ field.help_text|safe }}</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+            <button type="submit">Upload</button>
+        </form> 
+    </div>
+    <aside id='dummy'>
+
+    </aside>
+{% endblock %}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block head %}{% endblock %}
+    </head>
+
+    <body>
+        <header>
+            <ul>
+                <li class='logo'><img src="{% static 'home/images/logo-12.png' %}" alt="logo"></li>
+                <li class='mid-menu'><h1><a href="#">Product</a></h1></li>
+                <li class='mid-menu'><h1><a href="#">About</a></h1></li>
+                <li class='mid-menu mid-last'><h1><a href="#">Contact Us</a></h1></li>
+                <li class='right-menu'><h2><a href="#">English</a> | <a href="#">Bahasa</a></h2></li>
+                <div class='dropdown'>
+                    <li class='right-menu right-last'><button onClick='myFunction()' class='dropbtn'><img src="{% static 'home/images/profile.png' %}"></button></li>
+                    <div id='myDropdown' class='dropdown-content'>
+                        <a href="#">Register</a>
+                        <a href="#">Sign In</a>
+                    </div>
+                </div>
+                <li class='lang-resp'><h2><a href="#">EN</a> | <a href="#">ID</a></h2></li>
+                <div class='dropdown'>
+                    <li class='right-menu-resp'><button onClick='respDrop()' class='dropbtn'><img src="{% static 'home/images/hamburger-button.png' %}" width="75px"></button></li>
+                    <div id='respDropdown' class='dropdown-content'>
+                        <h1><a href="#">Product</a></h1>
+                        <h1><a href="#">About</a></h1>
+                        <h1><a href="#">Contact Us</a></h1>
+                        <h1><a href="#">Register</a></h1>
+                        <h1><a href="#">Sign In</a></h1>
+                    </div>
+                </div>
+            </ul>
+        </header>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer>
+            <p>Belajar Dasar Pemrograman Web &#169; 2020, Dicoding Academy</p>
+        </footer>
+
+        <script src="{% static 'home/js/home.js' %}"></script>
+    </body>
+</html>

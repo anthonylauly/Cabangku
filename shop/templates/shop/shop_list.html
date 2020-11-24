@@ -1,0 +1,462 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% load shop_tags %}
+
+{% block head %}
+    <title>Shop List</title>
+    <link rel="stylesheet" href="{% static 'shop/css/shop.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <article class="filter-box">
+        <div class='filter-title'>
+            Filter <br><br>
+        </div>
+        <div class='filter-category'>
+            <div class='filter-lokasi'>
+                Lokasi <br>
+                <input type="checkbox"> Surabaya <br>
+                <input type="checkbox"> Lampung <br>
+                <input type="checkbox"> Jakarta <br>
+                <input type="checkbox"> Bandung <br>
+                <a href="#">Lihat Selengkapnya</a>
+            </div>
+            <div class='filter-harga'>
+                Harga <br>
+                <input type="text"> <br>
+                <input type="text"> <br>
+            </div>
+            <div class='filter-industri'>
+                Industri <br>
+                <input type="checkbox"> Agriculture <br>
+                <input type="checkbox"> Food & Beverages <br>
+                <input type="checkbox"> Hotel,Tourism, & Catering <br>
+                <input type="checkbox"> Textile, Clothing, & Footwear <br>
+                <a href="#">Lihat Selengkapnya</a>
+            </div>
+        </div>
+        </article>
+        <article class="items">
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/241367_2_800.jpeg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 1</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Beautiful Hair.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 2</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, voluptatem error ab dolore sed impedit beatae odit, excepturi quae
+                        tempora porro dolor est, quidem reiciendis molestias distinctio provident unde eum.</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Beer Bar.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 3</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, doloribus sit aspernatur obcaecati facere repellat quasi dolor libero fugit sint,
+                        rem quae culpa ullam maxime asperiores alias, exercitationem quo eligendi.</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/bundle of fruits.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 4</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Butterflu Beauty Salon.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 5</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsam libero fugiat, repellendus vero reiciendis quam
+                        facilis pariatur omnis dicta beatae molestias non at blanditiis unde deleniti error consequuntur cupiditate?</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/chains-logo-symbol-for-sale-stock-unique-logotype (1).jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 6</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo cupiditate autem ducimus tempora eum rerum maxime sunt,
+                        fugiat cumque quibusdam molestias, ad ut. Doloremque, ad amet accusamus provident odit consequuntur.</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Classic Car.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 7</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit enim doloribus voluptates, eum iusto beatae id,
+                        tenetur ducimus ipsa rem vero dignissimos dolorum laboriosam quos omnis ab qui possimus nemo!</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/clever-light-bulb-idea-logo.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 8</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis rerum sed deleniti, ratione cumque voluptatem. Tempora expedita,
+                        repellat harum repellendus earum, id, veniam non nam dolore consequatur in at molestias?</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Coffee Break.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 9</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique exercitationem ullam sapiente, ipsa sequi reprehenderit eos accusamus,
+                        natus qui non quo ipsum, nisi tempora nulla magnam saepe repellendus quod! Quidem.</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/company-logo-free-vector-stock-idea-for-sale-design-designer-water-fire-tools.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 10</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eos odit ab beatae odio suscipit voluptatum, cupiditate porro nihil illo,
+                        rem delectus corporis facilis alias quibusdam praesentium, laboriosam eaque placeat.</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Cup Cafe.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 11</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, tempore suscipit? Soluta, mollitia velit iure dolor magnam ab blanditiis,
+                        sit fuga praesentium distinctio aperiam eaque provident corrupti nam illum ratione?</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/dog-army-pet-shop-logo.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 12</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, dignissimos perferendis doloremque nihil, aliquam quisquam sapiente sed
+                        similique minima corporis error at laudantium! Harum vel labore cupiditate veniam, incidunt quo!</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/fire-logo-flame.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 13</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sequi, quam velit ratione nostrum consequuntur ad dignissimos accusamus nobis,
+                        reprehenderit quos repellendus nam, beatae facere saepe obcaecati eos similique optio.</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/five-stars-exclusive-logo.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 14</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt blanditiis atque cum dolore, nihil tempora voluptatem consequatur consequuntur,
+                        nam quis saepe aliquam nostrum animi vero sequi accusamus recusandae optio?</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/gentleman-logo-sir-mustache-beer-brand-macho-irish-ireland-funny-symbol-bar-caffe-ideas-image.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 15</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aut quae nisi officia! Suscipit quisquam, aliquid iusto, maiores facilis voluptate
+                        voluptatem, earum architecto illum amet quae! Vitae qui quasi sunt.</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/go-nuts-brandname-buy.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 16</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, hic tempora veritatis eos saepe consequatur beatae molestias ipsam dignissimos
+                        quo soluta aliquid ipsa natus deserunt est aut illum, neque esse?</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/green-company-logo-design-template-e6cda0adebc58ba974fa4d2d02a14d1e_screen.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 17</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quia, maiores explicabo, odio nesciunt temporibus, dolores distinctio inventore eius cupiditate omnis?
+                        Similique tempore dicta laudantium, sint consectetur voluptas reiciendis porro!</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/health-food-logo.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 18</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero ut distinctio adipisci ea ipsum corporis vitae harum cumque! Vitae quasi natus est
+                        vel! Distinctio reprehenderit iure necessitatibus nemo nihil.</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Hipster Gamer.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 19</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, consequuntur commodi quidem quos accusamus tempora rem harum vitae aspernatur! Excepturi
+                        commodi odio repellendus quisquam. Nihil temporibus odio quo. Deleniti, enim!</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/identification-logo-id-buster.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 20</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fuga nam vel omnis magnam! Neque, ad voluptates? Temporibus fugiat quo nulla commodi, accusamus itaque?
+                        Consectetur odit nulla quaerat error tenetur!</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Lotus Salon.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 21</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem dolorum blanditiis consequatur eaque in veritatis recusandae aspernatur repudiandae? Quae facilis porro
+                        quia officia minima ea quibusdam iste sunt possimus beatae.</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/mail-fast-logo-rocket.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 22</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero expedita id velit, aliquam amet cum sed illo provident labore quaerat nihil facere distinctio
+                        sint quia laborum corporis nemo consequuntur laboriosam?</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/marathon-logo (3).jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 23</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nemo sunt porro quidem, ducimus quis! Officia excepturi ratione modi alias eos et
+                        rerum optio quia! Autem cum fugit rerum dolore!</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/mexican-restaurant-food.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 24</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic cupiditate sapiente necessitatibus repudiandae qui cum voluptates vel quis eligendi
+                        laborum quibusdam, provident aut nisi, dicta sunt excepturi rem, maiores est.</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/mortgage-logo.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 25</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore dicta veritatis voluptatibus, porro eveniet veniam illo aut nostrum quis quo, voluptatum
+                        fugiat culpa. Aspernatur quasi dolore totam? Reiciendis, nam ipsum!</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Old Barrel.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 26</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ipsum quibusdam, adipisci aperiam unde cupiditate blanditiis, omnis in, facere commodi
+                        nulla accusantium est quae ad iste accusamus harum saepe minima!</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Orchid Salon.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 27</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam porro accusamus quasi mollitia ratione soluta enim doloribus ea, eaque blanditiis dignissimos
+                        aut corporis animi voluptate ipsum doloremque officia earum! Aliquam?</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Play Cool.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 28</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis suscipit est eligendi non fugit accusamus maxime assumenda fugiat obcaecati velit! Neque suscipit
+                        reprehenderit ipsa ex consectetur deleniti necessitatibus impedit perspiciatis.</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/realtor-hand-logo-symbol-stock-company-logo-buy-design-idea-house-realty.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 29</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum at repellat alias consequatur sapiente hic, quisquam provident neque eaque maiores quidem,
+                        cum iure delectus iste sunt accusantium quaerat aspernatur doloribus.</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Restaurant Logo.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 30</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, exercitationem nihil dolore repellat odit et! Aliquid voluptate praesentium sapiente tenetur
+                        suscipit delectus, eaque maxime aperiam! Beatae eius porro quos delectus!</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/royal-logo-color-symbol-stock-free-download-ides-inspiration-buy.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 31</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque odit aperiam voluptate quam recusandae deserunt nisi officia voluptatibus eveniet.
+                        Qui incidunt at accusamus, obcaecati sint tempore eius nulla temporibus ea.</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Salinan Black and Gold Corporate Logo - Dibuat dengan PosterMyWall.png" alt="">
+                    <div float='right'>
+                        <h3>Dummy 32</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, ratione eaque dolorum deserunt dolorem rerum velit eveniet nobis sint voluptate
+                        iure non ullam autem esse est consequatur saepe labore dolore.</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Salinan DoThirsty Logo - Dibuat dengan PosterMyWall.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 33</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto officiis vitae expedita! Animi, voluptatem perspiciatis dolorum, modi eveniet incidunt
+                        veniam rerum, harum est eligendi nisi quia sapiente iure odit illum.</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Salinan Organic Restaurant Logo - Dibuat dengan PosterMyWall.png" alt="">
+                    <div float='right'>
+                        <h3>Dummy 34</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt ipsam, autem earum omnis nobis veniam quas in laudantium at laboriosam facere dolores,
+                        commodi soluta quos, voluptatum harum possimus! Cupiditate.</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Salinan salon logo - Dibuat dengan PosterMyWall.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 35</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatem sunt quas totam quod veritatis, quidem vero nulla iusto nesciunt
+                        dolore odit quasi odio natus quo tempora officia in dignissimos?</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Salinan Small Business logo design - Dibuat dengan PosterMyWall.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 36</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere vitae praesentium, nemo quos ratione et ex unde corrupti doloremque tenetur debitis sed voluptatem
+                        repellat harum porro voluptates tempora ducimus? Perferendis?</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/shield-logo-symbol-software-company-logo-buy-design-ides.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 37</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt modi, quos error doloribus nobis quae omnis, id vel excepturi consectetur ex
+                        officia porro ut aliquam facilis autem laudantium consequatur.</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/shop-instagram-logo-design-template-4a87a0691340ebb999043f744c47b586_screen.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 38</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsum sapiente maxime adipisci tenetur dicta dolor doloribus. Veritatis rerum laborum, vitae
+                        accusantium eveniet numquam voluptas architecto delectus dicta veniam aperiam?</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/tv-logo-design-template-1d6203bca42a018ff9d0dc7ff0f032e7_screen.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 39</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor delectus expedita amet in iste libero obcaecati natus magnam aut iure suscipit beatae dolorem
+                        optio distinctio, commodi maiores possimus doloremque temporibus!</p>
+                </div>
+            </div>
+            <div class='flex-row'>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/video-logo-eye.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 40</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum quod qui dolore possimus esse. Earum nisi necessitatibus aliquam alias dolore impedit.
+                        Voluptates nisi fugiat debitis reprehenderit repudiandae optio, rem soluta!</p>
+                </div>
+                <div class='card'>
+                    <img src="images/Dummy Company Logo/Wolf Logo.jpg" alt="">
+                    <div float='right'>
+                        <h3>Dummy 41</h3>
+                        <h4>Locations : Jakarta</4>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, neque at quae nobis consequatur, velit quasi nesciunt sit consectetur voluptatibus
+                        dolore sunt excepturi fuga ex animi? Iste ut quibusdam commodi?</p>
+                </div>
+            </div>
+        </article>
+    </div>
+    {% if users.has_other_pages %}
+        <ul class="pagination">
+            {% if users.has_previous %}
+                <li><a href="?page={{ users.previous_page_number }}">&laquo;</a></li>
+            {% else %}
+            <li class="disabled"><span>&laquo;</span></li>
+            {% endif %}
+        
+            {% for i in users.paginator.page_range %}
+                {% if users.number == i %}
+                    <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                {% else %}
+                    <li><a href="?page={{ i }}">{{ i }}</a></li>
+                {% endif %}
+            {% endfor %}
+            
+            {% if users.has_next %}
+                <li><a href="?page={{ users.next_page_number }}">&raquo;</a></li>
+            {% else %}
+                <li class="disabled"><span>&raquo;</span></li>
+            {% endif %}
+        </ul>
+    {% endif %}
+
+{% endblock %}

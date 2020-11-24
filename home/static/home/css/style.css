@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header {
+    background: #b2ebf2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header ul{
+    display: inline-flex;
+    margin: 0;
+}
+header li{
+    list-style: none;
+}
+header h1,h2,h3 {
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    margin: 0;
+    padding-top: 20px;
+}
+header h1{
+    font-size: 1.7em;
+}
+header h2,h3 {
+    padding-top: 25px;
+}
+a, h2{
+    text-decoration: none;
+    color: #14274e;
+}
+.logo img {
+    width: 200px;
+    padding-top: 20px;
+}
+.mid-menu{
+    margin-right: 45px;
+}
+.mid-last {
+    margin-right: 200px;
+}
+.right-menu{
+    margin-right: 35px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+.show {display:block;}
+.box {
+    /* properti lainnya */
+    background-color: #FBDD1C;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+footer {
+    padding: 20px;
+    color: white;
+    background: #b2ebf2;
+ }
+
+@media screen and (min-width: 1025px){
+    .logo {
+        margin-right: 300px;
+    }
+    .lang-resp, .right-menu-resp {display: none;}
+    .dropbtn img{
+        width:40px;
+        padding-top: 20px;
+    }
+    main{
+        overflow: auto;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width: 1024px) {
+    header ul{
+        padding: 0;
+        width: 100%;
+    }
+    .mid-menu{
+        display: none;
+    }
+    .right-menu{
+        display:none;
+    }
+    .lang-resp{
+        margin-left: 45%;
+    }
+    .right-menu-resp{
+        margin-left: 15%;
+    }
+    main{
+        overflow: auto;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .logo img{
+        width: 150px;
+    }
+    header ul{
+        padding: 0;
+        width: 100%;
+    }
+    .mid-menu{
+        display: none;
+    }
+    .right-menu{
+        display:none;
+    }
+    .lang-resp{
+        margin-left: 5%;
+    }
+    .right-menu-resp{
+        margin-left: 15%;
+    }
+    main{
+        overflow: auto;
+        margin-top: 80px;
+    }
+}
